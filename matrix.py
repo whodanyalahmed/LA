@@ -62,19 +62,25 @@ while True:
         result = [[0, 0, 0],
             [0, 0, 0],
             [0, 0, 0]]
-
+        
+        for i in range(len(x)):
+            for r in range(len(x[0])):
+                ival = eval(input("Enter value for x" + str(i+1) + str(r+1) + " : "))
+                x[i][r] = ival
+        print("x = ")
+        for i in x:
+            print("\t\t", i)
         # iterate through rows
         for i in range(len(x)):
-        # iterate through columns
-            for j in range(len(x[0])):
-                for k in range():
-                    result[j][i][k] = x[k][i][j]
+           # iterate through columns
+           for j in range(len(x[0])):
+               result[j][i] = x[i][j]
 
-
+        print("\n\n")
+        print("x transpose: \n")
         
-
         for r in result:
-            print(r)
+            print("\t\t",r)
 
     elif (op == "e" or op == "E"):
         break
