@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="matrix.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="vectorSpace.py">
       <SubType>Code</SubType>
     </Compile>
