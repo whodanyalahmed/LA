@@ -110,6 +110,22 @@ while True:
             print("The sum of u : " + str(ul) + " and v : " + str(vl) + " is : " + str(result))
         except SyntaxError as e:
             print("You had SyntaxError")
+    elif(op == "5"):
+        try:
+
+            s = eval(input("Enter any scalar value: "))
+            val = eval(input("Enter number of values: "))
+            ul = []
+            result = []
+            for i in range(val):
+                u = eval(input("Enter u"+str(i+1)+": "))
+                ul.append(u)
+                mul = ul[i]*s
+                result.append(mul)
+
+            print("The sum of u : " + str(ul) + " and s : " + str(s) + " is : " + str(result))
+        except SyntaxError as e:
+            print("You had SyntaxError")
 
     elif(op == "e" or op == "E"):
         break
